@@ -19,9 +19,8 @@ programa
 		inteiro soma = 0
 
 		idadeAnos = idadeAnos*365
-		soma = soma+idadeDias
-		soma = (idadeMeses*30)+soma
-		soma = soma + idadeAnos
+		idadeMeses = idadeMeses*30
+		soma = idadeDias+idadeMeses+idadeAnos
 		retorne soma
 		
 	}
@@ -31,9 +30,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 552; 
+ * @POSICAO-CURSOR = 384; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {idadeDias, 8, 10, 9}-{idadeDias, 18, 29, 9};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
