@@ -9,22 +9,27 @@ programa
 	  Calcular salário com horas excedentes*/
 	funcao inicio()
 	{
-		inteiro codFunc
-		real salario, pagamentoEx, numHoras, numHorasEx
+		cadeia codFunc
+		real salario = 0.0
+		real pagamentoEx = 0.0
+		real numHoras = 0.0
+		const real LIMITE = 50.0
+		const real VALOR_HORA = 10.0
+		const real VALOR_EXCEDENTE = 20.0
 
 		escreva("Digite o código de funcionario: ")
 		leia (codFunc)
 		escreva("Digite a quantidade de horas trabalhadas: ")
 		leia(numHoras)
-		escreva("Digite a quantidade de horas extras trabalhadas: ")
-		leia(numHorasEx)
-
-		salario = (numHoras*10)+(numHorasEx*20)
-		pagamentoEx = 0
-		se(numHorasEx > 50){
-			pagamentoEx = numHorasEx*20
+		se(numHoras< LIMITE){
+			salario = numHoras*VALOR_HORA
+		}senao{
+			pagamentoEx = (numHoras - LIMITE)* VALOR_EXCEDENTE
+			salario = (LIMITE*VALOR_HORA)+pagamentoEx
 		}
-		escreva("Salario: R$"+salario+" | Pagamento excedente: R$"+pagamentoEx)	
+
+		
+		escreva("Salario Total: R$"+salario+" | Pagamento excedente: R$"+pagamentoEx + " | Horas trabalhadas: "+ numHoras)	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -32,7 +37,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 572; 
+ * @POSICAO-CURSOR = 716; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
