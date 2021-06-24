@@ -27,14 +27,32 @@ programa
 		escreva("Convertido fica:\n"+somaHoras+" Horas "+" "+somaMin+" Minutos"+" "+somaSeg+" segundos")
 	}
 }
+
+
+/*
+
+		inteiro Temp;
+		inteiro horas, minutos, segundos
+
+
+		escreva("Digite o tempo do evento")
+		leia(temp)
+
+		horas = temp/3600
+		minutos = (temp%3600)/60
+		segundos = (temp%3600)%60
+		
+	
+
+*/
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 382; 
+ * @POSICAO-CURSOR = 328; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {segundos, 6, 10, 8}-{somaHoras, 7, 10, 9}-{somaMin, 8, 10, 7}-{somaSeg, 9, 10, 7};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
